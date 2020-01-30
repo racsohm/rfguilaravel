@@ -32,6 +32,8 @@ abstract class rfGui extends  Controller {
         'editar'=>'img/icons/document-edit.png'
     ];
 
+
+
     /**
      * @param  $tituloTabla
      * @param  $nombreModelo
