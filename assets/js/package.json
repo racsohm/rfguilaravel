@@ -1,0 +1,55 @@
+{
+  "_from": "rfframework",
+  "_id": "rfframework@5.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-ZLBe/ZTcke8byNe1pz4kXwnCvzGwBroB87x+OnY24/Za3OjUT/qkNfVQYqbn+EveLkiFIVNFLN2cZKmyWmyrCQ==",
+  "_location": "/rfframework",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "rfframework",
+    "name": "rfframework",
+    "escapedName": "rfframework",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/rfframework/-/rfframework-5.0.0.tgz",
+  "_shasum": "0ceb13a3650570f7a58b26256f85c2a05b2edad9",
+  "_spec": "rfframework",
+  "_where": "C:\\Users\\ARSA\\PhpstormProjects\\inavaTools",
+  "author": {
+    "name": "Oscar Herrera",
+    "email": "mao.oscar@gmail.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@types/jquery": "^3.3.30",
+    "bootstrap": "^4.3.1",
+    "jquery-pseudo-class": "^0.1.8"
+  },
+  "deprecated": false,
+  "description": "Framework basada en JavaScript para control y manejo de tablas, interfaz gráfica y mensajes",
+  "devDependencies": {},
+  "keywords": [
+    "Tablas",
+    "Grids",
+    "Framework"
+  ],
+  "license": "ISC",
+  "main": "rfGrid.js",
+  "name": "rfframework",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/racsohm/rfgrid/src/master/https://bitbucket.org/racsohm/rfgrid/src/master/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "5.0.0"
+}

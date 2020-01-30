@@ -1,0 +1,403 @@
+
+$colorFondo1: white
+$colorFondo2: #00428a
+
+$colorContraste1: #00428a
+$colorContraste2: white
+
+$colorPrimario: #00428a
+$colorPrimario50p: #70a7ff
+
+$colorSecundario: darkblue
+$colorTercero: black
+
+$fontSize: 1em
+$fontFamily: "Arial"
+$overColor: #e1e1e1
+
+.color2
+    fill: $colorContraste1
+.color1
+    fill: $colorContraste2
+
+.strole1
+    stroke: $colorContraste1
+.strole2
+    stroke: $colorContraste2
+.inver1
+    stroke: $colorContraste1
+    fill: $colorContraste2
+
+*
+    box-sizing: border-box
+
+
+
+body
+    background-color: $colorFondo1
+    margin: 0
+    padding: 0
+
+.rfGrid
+    margin: 0
+    padding: 0
+    font-family: "Bitstream Vera Sans"
+    font-size: $fontSize
+    background-color: $colorFondo1
+
+
+    &.rfVentana
+        border: 1px solid $colorContraste1
+        display: flex
+        flex-direction: column
+        background-color: $colorFondo1
+        user-select: none
+        font-family: $fontFamily
+        font-size: $fontSize
+        z-index: 5
+
+        &.encabezado
+            height: 27px
+            width: 100%
+            flex-grow: 0
+            background-color: $colorPrimario
+            color: $colorContraste2
+            display: flex
+            flex-direction: row
+            border: none
+            padding-top: 2px
+            &.titulo
+                text-align: left
+                flex-grow: 1
+                align-items: center
+                display: flex
+                justify-content: center
+                font-weight: bold
+            &.opt
+                display: flex
+                flex-direction: row
+                width: 71px
+
+                button
+                    // border: 1px $colorContraste solid
+                    color: $colorContraste2
+                    background-color: $colorContraste1
+                    height: 23px
+                    margin-right: 2px
+                    cursor: pointer
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-weight: bold
+
+        &.contenido
+            display: flex
+            flex-grow: 1
+            user-select: none
+            overflow: hidden
+
+            &.advertencia
+                display: flex
+                flex-direction: row
+                border: none
+                padding: 10px
+
+                &.img1
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    justify-items: center
+                    flex-grow: 0
+
+                    svg
+                        width: 60px
+                        height: 60px
+
+            &.txt
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                color: $colorContraste1
+
+                .opt
+                    background-color: transparent
+                    border: 1px solid $colorContraste1
+                    color: $colorPrimario
+                    min-width: 30px
+                    min-height: 50px
+                    margin: 10px auto
+                    margin-right: 10px
+                    &:hover
+                        background-color: $colorContraste1
+                        color: $colorContraste2
+                        font-weight: bold
+                        cursor: pointer
+                        user-focus: none
+
+
+            &.opts
+                display: flex
+                flex-direction: row
+
+
+        &.infobar
+            height: 15px
+            flex-grow: 0
+            background-color: $colorPrimario
+            display: none
+            color: $colorContraste2
+            font-size: smaller
+            text-align: center
+
+.rfTabla
+    font-family: $fontFamily
+    font-size: $fontSize
+    display: flex
+    flex-direction: column
+    overflow: scroll
+    margin: 0
+    padding: 0
+
+
+    &.titulo
+        align-items: center
+        justify-content: space-around
+        overflow: visible
+        height: 25px
+        position: sticky
+        left: 0
+        background-color: $colorPrimario50p
+        color: $colorContraste2
+        font-weight: bold
+
+    &.paginador
+        height: 25px
+        flex-grow: 0
+        overflow: initial
+        top: 0
+        left: 0
+        position: sticky
+        background-color: $colorFondo2
+        color: $colorContraste2
+        display: flex
+        flex-direction: initial
+        align-items: center
+
+
+        &.vbuscar
+            width: 40%
+            form
+                display: flex
+                flex-direction: row
+                flex-grow: 1
+                height: 85%
+
+                input[type=text]
+                    width: 50%
+                    background-color: transparent
+                    color: $colorContraste2
+                    border: 1px $colorContraste2 solid
+                    text-align: center
+                    font-size: small
+                    &::placeholder
+                        padding: 3px
+                        color: $colorContraste2
+
+                button
+                    background-color: $colorContraste2
+                    color: $colorContraste2
+                    border: 1px $colorContraste2 solid
+                    visibility: hidden
+
+                    object
+                        width: 15px
+
+
+        &.vpag
+            width: 50%
+            display: flex
+            flex-direction: row-reverse
+            padding: 3px
+
+            select
+                width: 50px
+                background-color: transparent
+                margin: 10px
+                color: $colorContraste2
+                border: 1px solid $colorContraste2
+                text-align: center
+                option
+                    color: $colorContraste1
+                    font-weight: bold
+
+            span
+                font-weight: bold
+                padding: 3px
+
+
+    &.encabezado
+        position: sticky
+        top: 25px
+        flex-direction: row
+        height: 25px
+        overflow: visible
+        flex-grow: 0
+        background-color: $colorContraste1
+        color: $colorContraste2
+
+        .columna
+            cursor: pointer
+            font-style: italic
+            font-weight: bold
+
+        [data-orden='1']
+            filter: invert(1) grayscale(1) contrast(9)
+        [data-orden='0']
+            filter: invert(1) grayscale(1) contrast(9)
+
+
+
+
+    &.fila
+        overflow: visible
+        height: 25px
+        flex-direction: row
+        background-color: $colorContraste2
+        color: $colorPrimario
+        border-bottom: 1px $colorPrimario50p dotted
+        &.celda
+            border-right: 1px $colorPrimario dotted
+            margin: auto 0
+            padding: 3px
+        &:hover
+            background-color: $colorPrimario50p
+
+
+    .chk
+        background-color: $colorContraste1
+        display: flex
+
+
+        input[type=checkbox]
+            background-color: transparent
+            border-collapse: collapse
+
+    &.columna
+        overflow: visible
+        background-color: $colorPrimario
+
+    &.pegajoso
+        position: sticky
+        left: 0
+
+
+    &.pegajoso1
+        position: sticky
+        left: 20px
+        background-color: $colorPrimario
+        color: $colorContraste2
+
+.rfVelo
+    position: fixed
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+    z-index: 4
+    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.34) 58%,rgba(0,0,0,0.36) 61%,rgba(0,0,0,0.48) 83%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#7a000000',GradientType=1 )
+
+.bnt-cat
+    max-width: 120px
+    min-width: 120px
+    height: 100px
+    justify-content: center
+    display: table
+    vertical-align: center
+    justify-items: center
+    align-items: center
+    padding: 5px
+    border: lightgrey
+
+    img
+        margin: 5px
+
+.rfControl
+    font-family: $fontFamily
+    font-size: $fontSize
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: 100%
+
+
+    .baseAcciones
+        width: 100%
+        height: 30px
+        /* background-color: $colorPrimario
+        color: $colorContraste2
+        display: flex
+        flex-direction: row-reverse
+
+        .accionesControl
+            width: 80%
+            flex-grow: 0
+            display: flex
+            button
+        /*¡ background: linear-gradient(to bottom,  $colorPrimario50p 0%,$colorPrimario 90%) *!/
+        /*color: white
+        /*height: 100%
+        /*border: none
+        /*margin-left: 1px
+        /*min-width: 75px
+        /* cursor: pointer
+        /*&:hover
+          background: linear-gradient(to bottom, $colorPrimario 0%, $colorPrimario50p 90%)
+        /*&:active
+          color: $colorContraste2
+          font-weight: bold
+
+        .tituloControl
+            flex-grow: 1
+            font-weight: bold
+            min-width: 100px
+            text-align: center
+            padding: 4px
+            display: flex
+            justify-content: space-between
+            object
+                width: 100px
+                &::content
+                    cursor: pointer
+
+    .baseTabla
+        flex-grow: 1
+        display: initial
+        overflow: auto
+        background-color: $colorContraste2
+        font-size: small
+
+.rfControlOpciones
+    padding: 3%
+
+    fieldset
+        margin: 5px
+        border-collapse: collapse
+        border: 1px solid $colorPrimario50p
+        &:hover
+            border: 1px solid $colorPrimario
+
+.boton-1
+    background-color: $colorPrimario
+    color: $colorContraste2
+    border: 1px solid $colorPrimario
+    border-collapse: collapse
+    &:hover
+        background-color: $colorContraste2
+        color: $colorPrimario
+        font-weight: bold
+
+@media only screen and (max-width: 600px)
+    body
+        background-color: lightblue

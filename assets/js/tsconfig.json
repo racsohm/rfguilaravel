@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "es2015",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true, //for angular to be able to use metadata we specify in our components.
+    "experimentalDecorators": true, //angular needs decorators like @Component, @Injectable, etc.
+    "removeComments": true,
+    "noImplicitAny": false
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

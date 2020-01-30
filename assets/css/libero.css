@@ -1,0 +1,32 @@
+#control {
+  margin: 6%; }
+
+.liberoTabla {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+  margin: 5%; }
+  .liberoTabla .cavidad {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row; }
+    .liberoTabla .cavidad .numero {
+      width: 20%; }
+    .liberoTabla .cavidad .contenedor {
+      flex-grow: 1;
+      font-size: 15px; }
+      .liberoTabla .cavidad .contenedor .lib {
+        border-bottom: 1px solid black;
+        font-size: smaller; }
+      .liberoTabla .cavidad .contenedor .ok {
+        background-color: #00FF00;
+        user-focus: red; }
+      .liberoTabla .cavidad .contenedor .current {
+        background-color: yellow; }
+
+/*# sourceMappingURL=libero.css.map */

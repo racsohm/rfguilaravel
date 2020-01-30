@@ -1,0 +1,339 @@
+@charset "UTF-8";
+.color2 {
+  fill: #00428a; }
+
+.color1 {
+  fill: white; }
+
+.strole1 {
+  stroke: #00428a; }
+
+.strole2 {
+  stroke: white; }
+
+.inver1 {
+  stroke: #00428a;
+  fill: white; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0; }
+
+.rfGrid {
+  margin: 0;
+  padding: 0;
+  font-family: "Bitstream Vera Sans";
+  font-size: 1em;
+  background-color: white; }
+  .rfGrid.rfVentana {
+    border: 1px solid #00428a;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    user-select: none;
+    font-family: "Arial";
+    font-size: 1em;
+    z-index: 5; }
+    .rfGrid.rfVentana.encabezado {
+      height: 27px;
+      width: 100%;
+      flex-grow: 0;
+      background-color: #00428a;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      border: none;
+      padding-top: 2px; }
+      .rfGrid.rfVentana.encabezado.titulo {
+        text-align: left;
+        flex-grow: 1;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-weight: bold; }
+      .rfGrid.rfVentana.encabezado.opt {
+        display: flex;
+        flex-direction: row;
+        width: 71px; }
+        .rfGrid.rfVentana.encabezado.opt button {
+          color: white;
+          background-color: #00428a;
+          height: 23px;
+          margin-right: 2px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: bold; }
+    .rfGrid.rfVentana.contenido {
+      display: flex;
+      flex-grow: 1;
+      user-select: none;
+      overflow: hidden; }
+      .rfGrid.rfVentana.contenido.advertencia {
+        display: flex;
+        flex-direction: row;
+        border: none;
+        padding: 10px; }
+        .rfGrid.rfVentana.contenido.advertencia.img1 {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-items: center;
+          flex-grow: 0; }
+          .rfGrid.rfVentana.contenido.advertencia.img1 svg {
+            width: 60px;
+            height: 60px; }
+      .rfGrid.rfVentana.contenido.txt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #00428a; }
+        .rfGrid.rfVentana.contenido.txt .opt {
+          background-color: transparent;
+          border: 1px solid #00428a;
+          color: #00428a;
+          min-width: 30px;
+          min-height: 50px;
+          margin: 10px auto;
+          margin-right: 10px; }
+          .rfGrid.rfVentana.contenido.txt .opt:hover {
+            background-color: #00428a;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            user-focus: none; }
+      .rfGrid.rfVentana.contenido.opts {
+        display: flex;
+        flex-direction: row; }
+    .rfGrid.rfVentana.infobar {
+      height: 15px;
+      flex-grow: 0;
+      background-color: #00428a;
+      display: none;
+      color: white;
+      font-size: smaller;
+      text-align: center; }
+
+.rfTabla {
+  font-family: "Arial";
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  margin: 0;
+  padding: 0; }
+  .rfTabla.titulo {
+    align-items: center;
+    justify-content: space-around;
+    overflow: visible;
+    height: 25px;
+    position: sticky;
+    left: 0;
+    background-color: #70a7ff;
+    color: white;
+    font-weight: bold; }
+  .rfTabla.paginador {
+    height: 25px;
+    flex-grow: 0;
+    overflow: initial;
+    top: 0;
+    left: 0;
+    position: sticky;
+    background-color: #00428a;
+    color: white;
+    display: flex;
+    flex-direction: initial;
+    align-items: center; }
+    .rfTabla.paginador.vbuscar {
+      width: 40%; }
+      .rfTabla.paginador.vbuscar form {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        height: 85%; }
+        .rfTabla.paginador.vbuscar form input[type=text] {
+          width: 50%;
+          background-color: transparent;
+          color: white;
+          border: 1px white solid;
+          text-align: center;
+          font-size: small; }
+          .rfTabla.paginador.vbuscar form input[type=text]::placeholder {
+            padding: 3px;
+            color: white; }
+        .rfTabla.paginador.vbuscar form button {
+          background-color: white;
+          color: white;
+          border: 1px white solid;
+          visibility: hidden; }
+          .rfTabla.paginador.vbuscar form button object {
+            width: 15px; }
+    .rfTabla.paginador.vpag {
+      width: 50%;
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 3px; }
+      .rfTabla.paginador.vpag select {
+        width: 50px;
+        background-color: transparent;
+        margin: 10px;
+        color: white;
+        border: 1px solid white;
+        text-align: center; }
+        .rfTabla.paginador.vpag select option {
+          color: #00428a;
+          font-weight: bold; }
+      .rfTabla.paginador.vpag span {
+        font-weight: bold;
+        padding: 3px; }
+  .rfTabla.encabezado {
+    position: sticky;
+    top: 25px;
+    flex-direction: row;
+    height: 25px;
+    overflow: visible;
+    flex-grow: 0;
+    background-color: #00428a;
+    color: white; }
+    .rfTabla.encabezado .columna {
+      cursor: pointer;
+      font-style: italic;
+      font-weight: bold; }
+    .rfTabla.encabezado [data-orden='1'] {
+      filter: invert(1) grayscale(1) contrast(9); }
+    .rfTabla.encabezado [data-orden='0'] {
+      filter: invert(1) grayscale(1) contrast(9); }
+  .rfTabla.fila {
+    overflow: visible;
+    height: 25px;
+    flex-direction: row;
+    background-color: white;
+    color: #00428a;
+    border-bottom: 1px #70a7ff dotted; }
+    .rfTabla.fila.celda {
+      border-right: 1px #00428a dotted;
+      margin: auto 0;
+      padding: 3px; }
+    .rfTabla.fila:hover {
+      background-color: #70a7ff; }
+  .rfTabla .chk {
+    background-color: #00428a;
+    display: flex; }
+    .rfTabla .chk input[type=checkbox] {
+      background-color: transparent;
+      border-collapse: collapse; }
+  .rfTabla.columna {
+    overflow: visible;
+    background-color: #00428a; }
+  .rfTabla.pegajoso {
+    position: sticky;
+    left: 0; }
+  .rfTabla.pegajoso1 {
+    position: sticky;
+    left: 20px;
+    background-color: #00428a;
+    color: white; }
+
+.rfVelo {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.34) 58%, rgba(0, 0, 0, 0.36) 61%, rgba(0, 0, 0, 0.48) 83%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#7a000000',GradientType=1 ); }
+
+.bnt-cat {
+  max-width: 120px;
+  min-width: 120px;
+  height: 100px;
+  justify-content: center;
+  display: table;
+  vertical-align: center;
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
+  border: lightgrey; }
+  .bnt-cat img {
+    margin: 5px; }
+
+.rfControl {
+  font-family: "Arial";
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; }
+  .rfControl .baseAcciones {
+    width: 100%;
+    height: 30px;
+    /* background-color: $colorPrimario */
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    /*¡ background: linear-gradient(to bottom,  $colorPrimario50p 0%,$colorPrimario 90%) *!/ */
+    /*color: white */
+    /*height: 100% */
+    /*border: none */
+    /*margin-left: 1px */
+    /*min-width: 75px */
+    /* cursor: pointer */
+    /*&:hover
+     * background: linear-gradient(to bottom, $colorPrimario 0%, $colorPrimario50p 90%) */
+    /*&:active
+     * color: $colorContraste2
+     * font-weight: bold */ }
+    .rfControl .baseAcciones .accionesControl {
+      width: 80%;
+      flex-grow: 0;
+      display: flex; }
+    .rfControl .baseAcciones .tituloControl {
+      flex-grow: 1;
+      font-weight: bold;
+      min-width: 100px;
+      text-align: center;
+      padding: 4px;
+      display: flex;
+      justify-content: space-between; }
+      .rfControl .baseAcciones .tituloControl object {
+        width: 100px; }
+        .rfControl .baseAcciones .tituloControl object::content {
+          cursor: pointer; }
+  .rfControl .baseTabla {
+    flex-grow: 1;
+    display: initial;
+    overflow: auto;
+    background-color: white;
+    font-size: small; }
+
+.rfControlOpciones {
+  padding: 3%; }
+  .rfControlOpciones fieldset {
+    margin: 5px;
+    border-collapse: collapse;
+    border: 1px solid #70a7ff; }
+    .rfControlOpciones fieldset:hover {
+      border: 1px solid #00428a; }
+
+.boton-1 {
+  background-color: #00428a;
+  color: white;
+  border: 1px solid #00428a;
+  border-collapse: collapse; }
+  .boton-1:hover {
+    background-color: white;
+    color: #00428a;
+    font-weight: bold; }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue; } }
+
+/*# sourceMappingURL=rfGuiToolStyles.css.map */

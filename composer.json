@@ -1,0 +1,21 @@
+{
+    "name": "racsohm/rfguilaravel",
+    "description": "Herrameinta para la creaci\u0000n de una GUI interativa para los modelos de Eloquent",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oscar Herrera",
+            "email": "mao.oscar@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/framework": "5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "racsohm\\rfguilaravel\\": "src/"
+        }
+    }
+}
