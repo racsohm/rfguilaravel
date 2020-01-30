@@ -8,10 +8,12 @@
             "email": "mao.oscar@gmail.com"
         }
     ],
-    "version": "1.0",
+    "version": "1.2",
     "require": {
-        "laravel/framework": "5.8",
         "php" : "^7.1"
+    },
+    "require-dev": {
+        "laravel/framework": "5.8"
     },
     "autoload": {
         "psr-4": {
