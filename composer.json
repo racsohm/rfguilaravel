@@ -1,7 +1,6 @@
 {
     "name": "racsohm/rfguilaravel",
     "description": "Herrameinta para la creaci\u0000n de una GUI interativa para los modelos de Eloquent",
-    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -9,8 +8,7 @@
             "email": "mao.oscar@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
-    "version": "1.00",
+    "version": "1.0",
     "require": {
         "laravel/framework": "5.8"
     },
