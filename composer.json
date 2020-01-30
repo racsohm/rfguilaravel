@@ -2,13 +2,14 @@
     "name": "racsohm/rfguilaravel",
     "description": "Herrameinta para la creaci\u0000n de una GUI interativa para los modelos de Eloquent",
     "license": "MIT",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Oscar Herrera",
             "email": "mao.oscar@gmail.com"
         }
     ],
-    "version": "1.2",
+    "version": "2.00",
     "require": {
         "php" : "^7.1"
     },
