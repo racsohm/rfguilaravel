@@ -10,7 +10,8 @@
     ],
     "version": "1.0",
     "require": {
-        "laravel/framework": "5.8"
+        "laravel/framework": "5.8",
+        "php" : "^7.1"
     },
     "autoload": {
         "psr-4": {
